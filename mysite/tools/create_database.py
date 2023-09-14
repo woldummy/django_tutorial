@@ -4,8 +4,6 @@ from django.conf import settings
 
 DATABASE_NAME = 'db.sqlite3'
 
-DATABASE_NAME = DATABASE_NAME
-
 # Setzen Sie die Einstellungen für das Django-Projekt
 settings.configure(
     DATABASES={

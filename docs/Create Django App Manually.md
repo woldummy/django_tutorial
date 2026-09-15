@@ -40,10 +40,21 @@
 * Check Django version
     ```python3 -m django --version```
 
-* Install the startproject with name ___mysite___
+* Install the startproject with name ___mysite___ in side the **current folder** 
     ```django-admin startproject mysite```
 
-This creates folder ___mysite___ in folder mysite
+This creates folder ___mysite___ with the following structure:
+
+``` text
+mysite/
+    manage.py  ## the Django command-line utility, can be extended with custom commands
+    mysite/
+        __init__.py  ## Python package marker
+        settings.py  ## settings for this Django project i.e
+        urls.py  ## URL declarations for this Django project
+        wsgi.py ## WSGI configuration for this Django project
+```
+
 * Check folder creation
 * Start the server from within upper folder mysite: otherwise NOT FOUND ERROR
 
@@ -70,5 +81,7 @@ This creates folder ___mysite___ in folder mysite
 ### adjust Django settings to Germany
 * change settings for German websites in ___settings.py___
 
-    ```LANGUAGE_CODE = 'de-de'```
-    ```TIME_ZONE = 'Europe/Berlin'```
+```python
+    LANGUAGE_CODE = 'de-de'
+    TIME_ZONE = 'Europe/Berlin'
+````
